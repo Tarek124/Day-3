@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.MyQuizApp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 580px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text1 {
+    width: 90%;
+    margin: auto;
+}
+
+.text1 h3 {
+    margin: 20px 0 0 0;
+}
+
+.Mybtn {
+    margin-left: 187px !important;
+    margin-top: -14px;
+}
+
+.Mybtn button {
+    font-size: 18px;
+    font-weight: 600;
+    background: tomato;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 57px 0 51px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.Mybtn button:hover {
+    background: rgb(29, 194, 194);
+}
+
+.RulesBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 580px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    display: none;
+}
+
+.activeInfo {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.RulesTitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+
+.RulesList {
+    width: 90%;
+    margin: auto;
+}
+
+.RulesList ol li {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 5px;
+}
+
+.buttons button {
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(219, 40, 8);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px 25px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 96px;
+}
+
+.buttons .exitBtn:hover {
+    background: rgb(216, 184, 0);
+}
+
+.buttons .continueBtn:hover {
+    background: rgb(29, 194, 194);
+}
+
+.exitBtn {
+    border-radius: 0 57px 0 51px;
+}
+
+.continueBtn {
+    border-radius: 57px 0 51px 0;
+    margin-left: 61px;
+}
+
+.questions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 580px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    display: none;
+}
+
+.questionHeader {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questionsHeader .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.timeCount {
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.seconds {
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 26px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.time_line {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+.section {
+    padding: 25px 30px 20px 30px;
+}
+
+.text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.MyOptions {
+    padding: 20px 0px;
+    display: block;
+}
+
+.options {
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options:hover {
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+
+}
+
+.total_que {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.total_que p {
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+
+
+footer .nextBtn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 25px;
+    outline: none;
+    border: none;
+    border-radius: 57px 0px 51px 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    background: tomato;
+    cursor: pointer;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+    margin-top: 11px;
+
+}
+
+footer .nextBtn:hover {
+    background-color: rgb(29, 194, 194);
+}
